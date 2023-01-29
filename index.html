@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Basics</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="wrapper">
+    <div id="main">
+      <div id="container">
+        <div id="content" role="main">
+          <!-- TODO: Content goes here -->
+          <img src="logo.png" alt="epam logo">
+          <h1>HTML Elements</h1>
+          <hr>
+          <a href="#home">Home</a>
+          <a href="#headers">Headers</a>
+          <a href="#table">Table</a>
+          <a href="#list">List</a>
+          <a href="#text">Textformats</a>
+          <a href="#quotes">Blockquotes</a>
+          <hr>
+          <!--paragraph-->
+          <p id="home">Pay attention to h1 tag inside section element.Font-size for h1 is the same as font-size for h2, because we have 
+            to use only one h1 on the page, and it is commonly used inside header</p>
+          <h2 id="headers">Header 2</h2>
+          <h3>Header 3</h3>
+          <h4>Header 4</h4>
+          <h5>Header 5</h5>
+          <h6>Header 6</h6>
+          <hr>
+          <!--paragraph-->
+          <p>Lorem ipsum dolorsit amet, <a href="">test link</a> adipiscing elit. <b>This is strong.</b> Nullam dignissim convallis est.
+          Quisque aliquam. <i>This is emphasized.</i>Donec faucibus. Nunc iaculis suscipit dui. 5 <sup>3</sup>=125. Water is H <sub>2</sub>O. 
+          Nam sit amet sem. Aliquam libreo nisi, imperdict at, tincidunt nec, gravida vehicula, nisl. <i>The New York Times</i>(That's a citation).
+          <u>Underline.</u> Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat 
+          at, commando vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.</p>
+          <br>
+          <p> HTML and CSS are our tools. Maurus a ante. Suspendisse quam sem, consequat at, commando vitae, feugiat in, nunc. Morbi imperdiet 
+          augue quis tellus. Prasent mattis, massa quis luctus fermentum, turpis mi volupat justo, eu volupat enim diam eget metus. To copy a 
+          file type COPY <i>filename.</i><s>Dinner`s ar 5:00.</s> <mark>Let's make that 7</mark>. This <s>text</s> has been struck.</p>
+          <hr>
+          <!--table-->
+          <h1 id="table">Table</h1>
+          <table>
+            <tr>
+                <th>Header</th>
+                <th>Header</th>
+                <th>Header</th>
+            </tr>
+            <tr>
+                <td>Lviv</td>
+                <td>Kyiv</td>
+                <td>Kharkiv</td>
+            </tr>
+            <tr>
+                <td>Odessa </td>
+                <td>Zhytomyr</td>
+                <td>Dnipropetrovsk</td>
+            </tr>
+            <tr>
+                <td>Sumy</td>
+                <td>Chernivtsi</td>
+                <td>Lutsk</td>
+            </tr>
+          </table>
+          <!--list-->
+          <h1 id="list">Unordered List</h1>
+          <ul>
+            <li>List item 1</li>
+            <li>List item 2
+              <ul>
+                <li>Some nested list item 1 </li>
+              </ul>
+            </li>
+            <li>List item 3</li>
+          </ul>
+          <h1>Ordered List</h1>
+          <ol>
+            <li>List item 1</li>
+            <li>List item 2
+              <ol>
+                <li>Some nested list item 1 </li>
+              </ol>
+            </li>
+            <li>List item 3</li>
+          </ol>
+
+          <h2>Definition List</h2>
+          <dl>
+            <dt>defines term 1</dt>
+            <dd>description 1</dd>
+            <dt>defines term 2</dt>
+            <dd>description 2</dd>
+          </dl>
+          <!--option tag-->
+          <label for="lang">Details</label>
+          <select name="lang" id="lang">
+            <option value="">HTML</option>
+          </select>
+          <hr>
+          <!--  -->
+          <h1>Text formats</h1>
+          <h2>Article Text</h2>
+          <article>
+              <h2>Article title</h2>
+              <p>Article description</p>
+          </article>
+          <!--performatted text-->
+          <h2 id="text">Performatted Text</h2>
+          <pre>
+Text
+  in a pre element
+    is displayed in a fixed-width
+font, and it preserves
+both      spaces and
+    line breaks
+          </pre>
+          <!--code-->
+          <h1>Code</h1>
+          <pre>
+            <code>
+.wrapper{
+  display: flex;
+  vertical-align: middle;
+  justify-content: center;
+}
+            </code>     
+          </pre>
+          <!--block quotes-->
+          <h1 id="quotes">Blockquotes</h1>
+          <p>Let's keep it simple. Italics are good to help set it off from the body text. Be sure to style the citation.</p>
+          <blockquote>
+            "If you go back a few hundred years, what we take for granted today would seem like magic-being able 
+            to talk to people over long distances, to transmit images, flying, accessing vast amounts of data like an oracle. 
+            These are all thing that would have been considered magic a few hundred years ago."<br>
+            <a href="">Elon Musk</a>
+          </blockquote>
+          <!--form-->
+          <form action="/action_page.php">
+            <fieldset>
+                <label for="firstName">First name:</label>
+                <input type="text" id="firstName" >
+            </fieldset>
+            <fieldset>
+                <label for="surName">Surname:</label>
+                <input type="text" id="surName" >
+            </fieldset>
+            <fieldset>
+              <label for="mail">E-mail:</label>
+              <input type="text" id="mail" >
+          </fieldset>
+            <textarea name="textarea" cols="30" rows="10"></textarea><br>
+            <input type="submit" name="Submit" value="Submit">
+        </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
